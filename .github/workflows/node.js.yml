@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    name: "Build and Test"
+    name: "Build and Test Project"
     runs-on: ubuntu-latest
     permissions:
           # Required to allow actions/checkout to clone the repository onto the runner
@@ -21,7 +21,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [20.x, 22.x]
+        node-version: [22.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
